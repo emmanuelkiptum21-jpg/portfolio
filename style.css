@@ -4,20 +4,30 @@
     align-items: center;
     padding: 1rem;
     background-color: #5f5d5a;
-    color: white;
+    color: rgb(219, 183, 86);
 }
+
 .logo {
-    font-size:large;
-    font-weight:bold;
-    margin-left:1rem;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 1rem;
+    cursor:pointer;
 }
+
 ul li {
-    list-style:none;
-    display:inline-block;
-    padding : 10px 16px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
 
 }
-ul li a{
-    font-size:23px;
-    color:rgb(219, 183, 86);
+
+.nav ul li a {
+    font-size: 23px;
+    color: white;
+    margin: right 1px;
+    text-decoration:none;
+}
+
+.nav ul li :hover {
+    color: rgb(219, 183, 86);
 }
