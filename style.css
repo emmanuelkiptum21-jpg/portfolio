@@ -26,8 +26,26 @@ ul li {
     color: white;
     margin: right 1px;
     text-decoration:none;
+    transition:color 0.3s ease;
 }
 
 .nav ul li :hover {
     color: rgb(219, 183, 86);
+}
+.home{
+    margin-left: 7%;
+    margin-top: 7%;
+}
+.home h1 {
+    font-size :67px;
+    color:#5f5d5a
+}
+.home h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color:#4c4944
+  
+}
+.home h1 span {
+    color:rgb(219, 183, 86);
 }
