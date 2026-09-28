@@ -1,51 +1,190 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #5f5d5a;
+    padding: 1rem 2rem;
+    background-color: #222;
+}
+
+/* Logo */
+
+.logo h1 {
     color: rgb(219, 183, 86);
+    font-size: 30px;
+    margin: 0;
+    cursor: pointer;
 }
 
-.logo {
-    font-size: large;
-    font-weight: bold;
-    margin-left: 1rem;
-    cursor:pointer;
-}
 
-ul li {
+/* Navigation links */
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     list-style: none;
-    display: inline-block;
-    padding: 10px 16px;
+}
 
+.nav ul li {
+    list-style: none;
+    padding: 10px 16px;
 }
 
 .nav ul li a {
-    font-size: 23px;
     color: white;
-    margin: right 1px;
-    text-decoration:none;
-    transition:color 0.3s ease;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
-.nav ul li :hover {
+.nav ul li a:hover {
     color: rgb(219, 183, 86);
 }
-.home{
+
+
+
+.home {
     margin-left: 7%;
-    margin-top: 7%;
+    margin-top: 10%;
 }
-.home h1 {
-    font-size :67px;
-    color:#5f5d5a
-}
+
 .home h3 {
     font-size: 20px;
     letter-spacing: 2px;
-    color:#4c4944
-  
+    color: #ddd;
 }
+
+.home h3 span {
+    color: rgb(219, 183, 86);
+}
+
+
+/* Main heading */
+
+.home h1 {
+    font-size: 67px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
 .home h1 span {
-    color:rgb(219, 183, 86);
+    color: rgb(219, 183, 86);
 }
+
+
+/* Description */
+
+.home p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #bbb;
+}
+
+
+
+.portfolio-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio-container > h1 {
+    color: rgb(219, 183, 86);
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid rgb(219, 183, 86);
+    border-radius: 10px;
+}
+
+.portfolio-item h3 {
+    color: rgb(219, 183, 86);
+    margin-bottom: 15px;
+}
+
+.portfolio-item p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+#contact {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #222;
+}
+
+#contact h2 {
+    color: rgb(219, 183, 86);
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .nav-bar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav ul {
+        gap: 5px;
+    }
+
+    .nav ul li {
+        padding: 8px;
+    }
+
+    .nav ul li a {
+        font-size: 18px;
+    }
+
+    .home {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 15%;
+    }
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+    .portfolio-item {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
