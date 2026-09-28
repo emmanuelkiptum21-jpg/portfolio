@@ -113,7 +113,7 @@ body {
     font-size: 18px;
     line-height: 1.7;
     color: #bbb;
-} 
+}
 
 
 
@@ -247,6 +247,36 @@ body {
 
 .contact-form button:hover {
     background-color: white;
+}
+
+.about {
+    margin: 8% 7%;
+    max-width: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: #5f5d5a;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: rgb(219, 183, 86);
+    margin-top: 10px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4c4944;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
 
 @media (max-width: 768px) {
