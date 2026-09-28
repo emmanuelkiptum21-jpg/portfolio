@@ -57,8 +57,29 @@ body {
 
 
 .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-left: 7%;
     margin-top: 10%;
+    margin-right: 7%;
+}
+
+.home-text {
+    width: 60%;
+}
+
+.home-image {
+    width: 35%;
+    text-align: center;
+}
+
+.home-image img {
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(219, 183, 86);
 }
 
 .home h3 {
@@ -92,7 +113,8 @@ body {
     font-size: 18px;
     line-height: 1.7;
     color: #bbb;
-}
+} 
+
 
 
 
